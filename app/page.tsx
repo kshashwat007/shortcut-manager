@@ -35,8 +35,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between ">
       <input type="text" placeholder="Type here" className="input input-bordered w-full" />
-      <Favourites />
-      {/* <Content /> */}
+      <Content />
     </main>
   )
 }

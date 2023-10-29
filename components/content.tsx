@@ -3,7 +3,16 @@ import { GrAddCircle } from "react-icons/gr";
 import { FaReact } from 'react-icons/fa';
 import { FaCirclePlus } from 'react-icons/fa6';
 
-const data = {
+interface Shortcut {
+  shortcut_name: string;
+  shortcut_key: string;
+}
+
+interface AppShortcuts {
+  [appName: string]: Shortcut[];
+}
+
+const data: AppShortcuts = {
   "excel": [{ shortcut_name: "Select All", shortcut_key: "Ctrl + C" }, { shortcut_name: "Applies Bold formatting", shortcut_key: "Ctrl + B" }],
   "vscode": [{ shortcut_name: "Select All", shortcut_key: "Ctrl + C" }, { shortcut_name: "Applies Bold formatting", shortcut_key: "Ctrl + B" }]
 }
